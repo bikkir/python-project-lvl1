@@ -1,0 +1,8 @@
+name: linter-check
+on: push
+jobs:
+  linter:
+    runs-on: ubuntu-latest
+    steps:
+      pip install poetry
+      make lint
