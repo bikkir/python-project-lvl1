@@ -1,6 +1,6 @@
 name: hexlet-lint
 on: push
-  jobs: build:
+  jobs: lint
    runs-on: ubunty-latest
     steps:
       - name: 'Install_dependencies'
