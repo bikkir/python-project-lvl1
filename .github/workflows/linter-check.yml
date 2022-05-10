@@ -1,9 +1,11 @@
-name: linter-check
+name: hexlet-lint
 on: push
-jobs:
-  linter:
-    runs-on: ubuntu-latest
+  jobs: build:
+   runs-on: ubunty-latest
     steps:
-      run: 
-        pip install poetry
-        make lint
+      - name: 'Install_dependencies'
+        run: | 
+          pip install poetry
+          make install
+      - name: 'Run-linter'
+        run: make lint
