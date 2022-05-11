@@ -22,4 +22,5 @@ def check():
     print(sol)
     return sol
 
+
 sol = sol

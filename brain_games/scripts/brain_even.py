@@ -2,6 +2,7 @@
 import brain_games.greet
 import brain_games.even_check
 
+
 def main():
     i = 0
     if brain_games.even_check.sol is True and i < 3:
@@ -9,8 +10,6 @@ def main():
         i += 1
     else:
         exit
-
-
 
 
 if __name__ == '__main__':
