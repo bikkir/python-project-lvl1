@@ -7,6 +7,4 @@ jobs:
       - name: 'Install_dependencies'
         run: | 
           pip install poetry
-          make install
-      - name: 'Run-linter'
-        run: make lint
+          make lint
