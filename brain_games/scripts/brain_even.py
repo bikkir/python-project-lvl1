@@ -1,15 +1,10 @@
 #!/usr/bin/env python
-import brain_games.greet
-import brain_games.even_check
+from brain_games.logic import run
+from brain_games import even_check
 
 
 def main():
-    i = 0
-    if brain_games.even_check.sol is True and i < 3:
-        brain_games.even_check.check()
-        i += 1
-    else:
-        exit
+   run(even_check)
 
 
 if __name__ == '__main__':
