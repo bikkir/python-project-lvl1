@@ -4,7 +4,7 @@ from brain_games import even_check
 
 
 def main():
-   run(even_check)
+    run(even_check)
 
 
 if __name__ == '__main__':
