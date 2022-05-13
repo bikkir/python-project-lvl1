@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 from brain_games.logic import run
-from brain_games.games import even_check
+from brain_games.games import calc
 
 
 def main():
-    run(even_check)
+    run(calc)
 
 
 if __name__ == '__main__':

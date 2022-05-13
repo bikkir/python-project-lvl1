@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 from random import randint
 
+task = 'Answer "yes" if the number is even, otherwise answer "no".'
+
 
 def generate_question():
     number = randint(1, 100)
