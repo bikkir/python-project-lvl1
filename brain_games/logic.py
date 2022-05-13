@@ -19,4 +19,4 @@ def run(game):
                   f" Correct answer was '{correct_answer}'.")
             print(f"Let's try again, {user_name}!")
             break
-    print(f'Congratulations, {user_name}!')
+    if rounds_num == 0: print(f'Congratulations, {user_name}!')

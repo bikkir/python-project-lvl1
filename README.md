@@ -6,3 +6,5 @@
 [![hexlet-lint](https://github.com/bikkir/python-project-lvl1/actions/workflows/linter-check.yml/badge.svg)](https://github.com/bikkir/python-project-lvl1/actions/workflows/linter-check.yml)
 
 [![asciicast](https://asciinema.org/a/gBoHUdXJvx4szfVpOAqZTCE0n.svg)](https://asciinema.org/a/gBoHUdXJvx4szfVpOAqZTCE0n)
+
+[![asciicast](https://asciinema.org/a/qPpkt5XlEtBGVrEU7FBqWNLb5.svg)](https://asciinema.org/a/qPpkt5XlEtBGVrEU7FBqWNLb5)
