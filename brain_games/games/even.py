@@ -15,6 +15,6 @@ def generate_question():
         correct_answer = 'no'
     return text_question, correct_answer
 
+
 def is_even(number):
     return number % 2 == 0
-    

@@ -13,6 +13,7 @@ def generate_question():
     correct_answer = get_answer(num1, num2)
     return text_question, correct_answer
 
+
 def get_answer(num1, num2):
     divisor = min(num1, num2)
     while not (num1 % divisor == 0 and num2 % divisor == 0):

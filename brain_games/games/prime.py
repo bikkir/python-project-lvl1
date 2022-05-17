@@ -14,6 +14,7 @@ def generate_question():
         correct_answer = 'no'
     return number, correct_answer
 
+
 def is_prime(number):
     if number == 2:
         return True
@@ -26,4 +27,3 @@ def is_prime(number):
             if number % i == 0:
                 return False
         return True
-
