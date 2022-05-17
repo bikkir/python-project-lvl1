@@ -1,15 +1,20 @@
 #!/usr/bin/env python
 from random import randint
 
-task = 'Find the greatest common divisor of given numbers.'
+TASK = 'Find the greatest common divisor of given numbers.'
+MIN = 4
+MAX = 40
 
 
 def generate_question():
-    num1 = randint(4, 40)
-    num2 = randint(4, 40)
+    num1 = randint(MIN, MAX)
+    num2 = randint(MIN, MAX)
+    text_question = f'{num1} {num2}'
+    correct_answer = get_answer(num1, num2)
+    return text_question, correct_answer
+
+def get_answer(num1, num2):
     divisor = min(num1, num2)
     while not (num1 % divisor == 0 and num2 % divisor == 0):
         divisor -= 1
-    text_question = f'{num1} {num2}'
-    correct_answer = str(divisor)
-    return text_question, correct_answer
+    return str(divisor)

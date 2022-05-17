@@ -1,9 +1,15 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = ""
+description = "First training project - brain-games"
 authors = ["bikkir <bik.kirill.88@gmail.com>"]
+repository = "https://github.com/bikkir/python-project-lvl1"
 packages = [{include = "brain_games"}]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
 
 [tool.poetry.dependencies]
 python = "^3.8"

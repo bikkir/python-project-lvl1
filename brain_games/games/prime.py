@@ -1,21 +1,29 @@
 #!/usr/bin/env python
 from random import randint
 
-task = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+TASK = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+MIN = 1
+MAX = 100
 
 
 def generate_question():
-    number = randint(1, 100)
-    if number == 2:
+    number = randint(MIN, MAX)
+    if is_prime(number):
         correct_answer = 'yes'
-    elif number == 1:
+    else:
         correct_answer = 'no'
-    i = number - 1
-    while i > 1:
-        if number % i == 0:
-            correct_answer = 'no'
-            break
-        else:
-            correct_answer = 'yes'
-        i -= 1
     return number, correct_answer
+
+def is_prime(number):
+    if number == 2:
+        return True
+    elif number == 1:
+        return False
+    else:
+        i = number
+        while i > 2:
+            i -= 1
+            if number % i == 0:
+                return False
+        return True
+
