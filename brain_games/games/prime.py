@@ -2,12 +2,12 @@
 from random import randint
 
 TASK = 'Answer "yes" if given number is prime. Otherwise answer "no".'
-MIN = 1
-MAX = 100
+LOWER_BOUND = 1
+UPPER_BOUND = 100
 
 
-def generate_question():
-    number = randint(MIN, MAX)
+def get_round():
+    number = randint(LOWER_BOUND, UPPER_BOUND)
     if is_prime(number):
         correct_answer = 'yes'
     else:

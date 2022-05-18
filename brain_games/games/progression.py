@@ -1,20 +1,23 @@
 #!/usr/bin/env python
-from random import randint
+from random import randint, choice
 
 TASK = 'What number is missing in the progression?'
+LOWER_BOUND = 1
+INITIAL_UPPER_BOUND = 20
+DIFF_UPPER_BOUND = 5
 
 
-def generate_question():
-    num1 = randint(1, 20)
-    step = randint(1, 5)
-    key = randint(2, 9)
-    text_question = f'{num1}'
-    i = 1
-    while i < 10:
-        if i == key:
-            text_question += ' ..'
-            correct_answer = str(num1 + i * step)
-        else:
-            text_question += ' ' + str(num1 + i * step)
-        i += 1
-    return text_question, correct_answer
+def get_round():
+    progression = get_progression()
+    key = choice(progression)
+    text_question = ' '.join([
+        '..' if num == key else str(num) for num in progression
+    ])
+    return text_question, str(key)
+
+
+def get_progression():
+    initial = randint(LOWER_BOUND, INITIAL_UPPER_BOUND)
+    diff = randint(LOWER_BOUND, DIFF_UPPER_BOUND)
+    max_num = initial + (diff * 10)
+    return range(initial, max_num, diff)

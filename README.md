@@ -1,5 +1,7 @@
 First training project - Brain Games.
 
+Install: python3 -m pip install --user git+https://github.com/bikkir/python-project-lvl1.git
+
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/bikkir/python-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/bikkir/python-project-lvl1/actions)
 

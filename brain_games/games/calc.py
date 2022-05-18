@@ -2,18 +2,14 @@
 import random
 
 TASK = 'What is the result of the expression?'
-MIN = 1
-MAX = 30
+LOWER_BOUND = 1
+UPPER_BOUND = 30
 
 
-def generate_question():
-    num1 = random.randint(MIN, MAX)
-    num2 = random.randint(MIN, MAX)
+def get_round():
+    num1 = random.randint(LOWER_BOUND, UPPER_BOUND)
+    num2 = random.randint(LOWER_BOUND, UPPER_BOUND)
     sign = random.choice('+-*')
-    if sign == '*':
-        num1 = random.randint(1, 10)
-        num2 = random.randint(1, 10)
-
     text_question = f'{num1} {sign} {num2}'
     correct_answer = str(eval(f'{num1}{sign}{num2}'))
     return text_question, correct_answer
