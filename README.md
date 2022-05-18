@@ -1,12 +1,15 @@
-#Brain Games
-First training project - Brain Games.
-    'brain-even' - even check
-    'brain-calc' - calculator
-    'brain-gcd' - greatest common divider
-    'brain-progression' - arithmetic progression
-    'brain-prime' - prime number 
+# Brain Games
 
-Install: 'python3 -m pip install --user git+https://github.com/bikkir/python-project-lvl1.git'
+### First training project - Brain Games.
+
+``brain-even`` - even check
+``brain-calc`` - calculator
+``brain-gcd`` - greatest common divider
+``brain-progression`` - arithmetic progression
+``brain-prime`` - prime number 
+
+### Installation:
+`python3 -m pip install --user git+https://github.com/bikkir/python-project-lvl1.git`
 
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/bikkir/python-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/bikkir/python-project-lvl1/actions)
