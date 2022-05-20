@@ -8,7 +8,10 @@ DIFF_UPPER_BOUND = 5
 
 
 def get_round():
-    progression = get_progression()
+    initial = randint(LOWER_BOUND, INITIAL_UPPER_BOUND)
+    diff = randint(LOWER_BOUND, DIFF_UPPER_BOUND)
+    length = 10
+    progression = get_progression(initial, diff, length)
     key = choice(progression)
     text_question = ' '.join([
         '..' if num == key else str(num) for num in progression
@@ -16,8 +19,6 @@ def get_round():
     return text_question, str(key)
 
 
-def get_progression():
-    initial = randint(LOWER_BOUND, INITIAL_UPPER_BOUND)
-    diff = randint(LOWER_BOUND, DIFF_UPPER_BOUND)
-    max_num = initial + (diff * 10)
+def get_progression(initial, diff, length):
+    max_num = initial + (diff * length)
     return range(initial, max_num, diff)
